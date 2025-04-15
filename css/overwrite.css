@@ -1,0 +1,85 @@
+.dots-1 {
+    margin-left: -40px
+}
+.dots-2 {
+    margin-right: -40px
+    
+}
+.headz {
+    color: black;
+    text-decoration: underline;
+    font-family: inherit
+}
+.cat-modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cat-modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+
+/*style sheet from scratch for scratch page*/
+.tab {
+  position: relative;
+  width: 80%;
+  max-width: 800px; 
+  margin: 0 auto; 
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+
+.tab iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.homebg {background-color: #ffd1dc;}
+
+.pink {
+    color: #ff1493;
+    text-align: center;
+}
+
+.font {
+    font-family: cursive;
+}
+
+.purp {
+    color: #8000ff;
+    font-family: sans-serif;
+    text-align: center;
+}

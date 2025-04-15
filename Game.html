@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>College Cat Quiz</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/cat.jpeg" />
+        <!-- Custom Google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+         <link href="css/overwrite.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100 bg-light">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Izzy Boettcher</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Game.html">Cat Quiz</a></li>
+                            <li class="nav-item"><a class="nav-link" href="Scratchpage.html">Scratch Page</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+<!-- START of the quiz replacement section -->
+<section class="py-5">
+    <div class="container px-5 mb-5">
+        <div class="text-center mb-5">
+            <h1 class="display-5 fw-bolder mb-0">
+                <span class="text-gradient d-inline">Which College Cat Are You?</span>
+            </h1>
+        </div>
+
+        <!-- Question 1 -->
+        <div id="question1">
+            <h3 class="fw-bold mb-4">How do you handle Monday mornings?</h3>
+            <div class="d-grid gap-3">
+                <a href="#question2" class="btn btn-outline-primary">I get up early, do my skincare, and grab breakfast with friends.</a>
+                <a href="#question2" class="btn btn-outline-primary">Headphones in, iced coffee in hand, no one talk to me.</a>
+                <a href="#question2" class="btn btn-outline-primary">I forget it’s Monday until I’m 20 minutes into the wrong class.</a>
+                <a href="#question2" class="btn btn-outline-primary">I sleep through 3 alarms and barely make it to campus.</a>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div id="question2" class="mt-5">
+            <h3 class="fw-bold mb-4">What’s your go-to study strategy?</h3>
+            <div class="d-grid gap-3">
+                <a href="#question3" class="btn btn-outline-secondary">Color-coded notes, flashcards, and group study sessions.</a>
+                <a href="#question3" class="btn btn-outline-secondary">Lofi beats, mood lighting, and vibing while reviewing.</a>
+                <a href="#question3" class="btn btn-outline-secondary">Skim the notes the night before and hope for the best.</a>
+                <a href="#question3" class="btn btn-outline-secondary">I “study” by staring at the wall until I fall asleep.</a>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div id="question3" class="mt-5">
+            <h3 class="fw-bold mb-4">Pick your ideal campus hangout spot:</h3>
+            <div class="d-grid gap-3">
+                <a href="#question4" class="btn btn-outline-success">Outside on the grass with friends.</a>
+                <a href="#question4" class="btn btn-outline-success">In a corner booth with earbuds and your laptop.</a>
+                <a href="#question4" class="btn btn-outline-success">Wandering the halls because you forgot where your class is.</a>
+                <a href="#question4" class="btn btn-outline-success">Curled up in a random bean bag chair asleep.</a>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div id="question4" class="mt-5">
+            <h3 class="fw-bold mb-4">What’s your go-to meal during finals week?</h3>
+            <div class="d-grid gap-3">
+                <button class="btn btn-outline-warning" onclick="document.getElementById('modal-happy').style.display='block'">Something fresh and balanced, with a smoothie.</button>
+                <button class="btn btn-outline-warning" onclick="document.getElementById('modal-dj').style.display='block'">Leftover pizza and an energy drink.</button>
+                <button class="btn btn-outline-warning" onclick="document.getElementById('modal-confused').style.display='block'">I forgot to eat all day and just had a granola bar.</button>
+                <button class="btn btn-outline-warning" onclick="document.getElementById('modal-tired').style.display='block'">Instant noodles at 2 a.m.</button>
+            </div>
+        </div>
+
+        <!-- Modals (popups) -->
+        <div id="modal-happy" class="cat-modal">
+            <div class="cat-modal-content">
+                <span class="close" onclick="document.getElementById('modal-happy').style.display='none'">&times;</span>
+                <img src="assets/happy_cat.jpeg" alt="Happy Cat" class="img-fluid mb-3">
+                <h2>You're Happy Cat! 😺</h2>
+                <p>Okay happy camper! You radiate joy and sunshine. You’ve got this.</p>
+            </div>
+        </div>
+
+        <div id="modal-dj" class="cat-modal">
+            <div class="cat-modal-content">
+                <span class="close" onclick="document.getElementById('modal-dj').style.display='none'">&times;</span>
+                <img src="assets/dj_cat.jpeg" alt="DJ Cat" class="img-fluid mb-3">
+                <h2>You're DJ Cat! 🎧</h2>
+                <p>You probably hate Apple Music listeners. You’re the human playlist of your friend group.</p>
+            </div>
+        </div>
+
+        <div id="modal-confused" class="cat-modal">
+            <div class="cat-modal-content">
+                <span class="close" onclick="document.getElementById('modal-confused').style.display='none'">&times;</span>
+                <img src="assets/confused_cat.jpeg" alt="Confused Cat" class="img-fluid mb-3">
+                <h2>You're Confused Cat! 😵‍💫</h2>
+                <p>You’re doing your best, and honestly, we’re proud of you for even showing up.</p>
+            </div>
+        </div>
+
+        <div id="modal-tired" class="cat-modal">
+            <div class="cat-modal-content">
+                <span class="close" onclick="document.getElementById('modal-tired').style.display='none'">&times;</span>
+                <img src="assets/sleepy_cat.jpeg" alt="Tired Cat" class="img-fluid mb-3">
+                <h2>You're Tired Cat! 😴</h2>
+                <p>Sleep is your love language. You deserve a nap, and then another nap.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to action (modified) -->
+<section class="py-5 bg-gradient-primary-to-secondary text-white">
+    <div class="container px-5 my-5">
+        <div class="text-center">
+            <h2 class="display-4 fw-bolder mb-4">Wanna try again?</h2>
+            <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="#question1">Take quiz again</a>
+        </div>
+    </div>
+</section>
+
+
+
+        <!-- Footer-->
+        <footer class="bg-white py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0">Copyright &copy; Izzy Boettcher 2025</div></div>
+                    <div class="col-auto">
+                        <a class="small" href="#!">Privacy</a>
+                        <span class="mx-1">&middot;</span>
+                        <a class="small" href="#!">Terms</a>
+                        <span class="mx-1">&middot;</span>
+                        <a class="small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
